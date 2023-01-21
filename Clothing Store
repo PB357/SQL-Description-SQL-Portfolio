@@ -1,0 +1,21 @@
+CREATE TABLE clothing (id integer PRIMARY KEY, TYPE TEXT, GENDER TEXT, COST INTEGER, SOLDQTY INTEGER);
+
+INSERT INTO clothing VALUES (1,"shirt", "M", 20.00, 10);
+INSERT INTO clothing VALUES (2,"shirt", "W", 25.00, 20);
+INSERT INTO clothing VALUES (3,"shirt", "B", 10.00, 5);
+INSERT INTO clothing VALUES (4,"shirt", "G", 15.00, 10);
+INSERT INTO clothing VALUES (5,"pants", "M", 20.00, 10);
+INSERT INTO clothing VALUES (6,"pants", "W",20.00, 20);
+INSERT INTO clothing VALUES (7,"pants", "B", 10.00, 5);
+INSERT INTO clothing VALUES (8,"pants", "G", 15.00, 10);
+INSERT INTO clothing VALUES (9,"socks", "M", 20.00, 10);
+INSERT INTO clothing VALUES (10,"socks", "W",25.00, 20);
+INSERT INTO clothing VALUES (11,"sockS", "B", 10.00, 1000);
+INSERT INTO clothing VALUES (12,"sock", "G", 15.00, 100);
+INSERT INTO clothing VALUES (13,"hat", "M", 30.00, 10);
+
+SELECT * FROM clothing;
+SELECT TYPE, sum (SOLDQTY) FROM clothing GROUP BY type;
+
+
+
